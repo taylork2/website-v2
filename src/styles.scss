@@ -14,3 +14,13 @@ $mdc-theme-background: #fff;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+
+    max-width: 1080px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
