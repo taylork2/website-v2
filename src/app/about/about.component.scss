@@ -11,3 +11,23 @@
         color: black;
     }
 }
+
+.dots .dot {
+    background-color: white;
+}
+
+.line {
+    border-color: white;
+    box-sizing: border-box;
+}
+
+.terminal {
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border: solid 5px white;
+}

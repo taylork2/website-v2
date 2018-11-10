@@ -2,3 +2,43 @@
     margin-top: 70px;
     margin-bottom: 70px;
 }
+
+.name {
+    font-size: 8vw;
+}
+
+.pic {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    border: solid 5px #5386E4;
+}
+
+.browser {
+    position: relative;
+
+    .dots {
+        position: absolute;
+        margin: 7px;
+    
+        .dot {
+            background-color: #5386E4;
+            float: left;
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            margin: 2px;
+        }
+    }
+    
+    .line {
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        border: solid 5px #5386E4;
+        border-bottom: none;
+    }
+}
+
+
+
