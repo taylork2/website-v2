@@ -9,16 +9,20 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatCard } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatStepperModule, MatTabsModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutComponent } from './about/about.component';
+import { BrowserComponent } from './browser/browser.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     NavbarComponent,
-    AboutComponent
+    AboutComponent,
+    BrowserComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
@@ -31,9 +35,10 @@ import { AboutComponent } from './about/about.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatGridListModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatStepperModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
