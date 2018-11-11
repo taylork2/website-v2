@@ -9,7 +9,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatStepperModule, MatTabsModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatStepperModule, MatTabsModule, MatChipsModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutComponent } from './about/about.component';
 import { BrowserComponent } from './browser/browser.component';
@@ -38,7 +38,8 @@ import { ExperienceComponent } from './experience/experience.component';
     MatCardModule,
     FlexLayoutModule,
     MatStepperModule,
-    MatTabsModule
+    MatTabsModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

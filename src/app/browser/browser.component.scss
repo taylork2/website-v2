@@ -25,6 +25,7 @@
     position: absolute;
     border: solid 5px;
     border-bottom: none;
+    box-sizing: border-box;
 }
 
 .content {
@@ -32,4 +33,5 @@
     position: relative;
     border: solid 5px;
     top: 20px;
+    box-sizing: border-box;
 }

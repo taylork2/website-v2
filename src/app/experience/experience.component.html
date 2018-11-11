@@ -8,12 +8,29 @@
       fxLayout="row"
       fxLayout.xs="column"
       fxLayoutGap="30px">
-      <my-browser fxFlex="40%">
-        <img class="experience-pic" src="assets/images/rde_messaging.png" alt="RDE Messaging System">
-      </my-browser>
+      <div fxFlex="40%">
+        <my-browser>
+          <img class="experience-pic" src="assets/images/rde_messaging.png" alt="RDE Messaging System">
+        </my-browser>
+        <div class="tech">
+          <mat-chip-list>
+            <mat-chip>Angular</mat-chip>
+            <mat-chip>Bootstrap</mat-chip>
+            <mat-chip>HTML/CSS</mat-chip>
+            <mat-chip>Coldfusion</mat-chip>
+            <mat-chip>REST APIs</mat-chip>
+          </mat-chip-list>
+        </div>
+        
+      </div>
       <div class="experience-desc" fxFlex="40%">
-        <h3>RDE Systems</h3>  
-        <p>RDE Systems is a technology consultancy company that serves the public health sector. As part of a small team, I designed and developed a messaging system using Angular to facilitate communication between AIDS patients and their caseworkers. I also created a Coldfusion API and integrated this messaging system into a larger webapp which ensured patients living with AIDS and HIV have access to medication.</p>
+        <h3>Computer Science Capstone @RDE Systems</h3> 
+        <p class="mat-caption">FEB 2018 - MAY 2018</p>
+        <ul>
+          <li>Designed and developed messaging system using Angular which encouraged AIDS patients to communicate with case workers.</li>    
+          <li>Created Coldfusion API and integrated messaging system into larger webapp for government AIDS Drug Assistance.</li>
+        </ul> 
+        <a mat-raised-button color="primary" routerLink=".">Read more</a>
       </div>
     </div>
     </mat-tab>
