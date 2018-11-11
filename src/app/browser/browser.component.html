@@ -1,0 +1,11 @@
+<div class="browser">
+  <div class="dots">
+      <span class="dot" [ngStyle]="{'background-color': color}"></span>
+      <span class="dot" [ngStyle]="{'background-color': color}"></span>
+      <span class="dot" [ngStyle]="{'background-color': color}"></span>
+  </div>
+  <div class="line" [ngStyle]="{'border-color': color}"></div>
+  <div class="content" [ngStyle]="{'border-color': color}">
+      <ng-content></ng-content>
+  </div>
+</div>
