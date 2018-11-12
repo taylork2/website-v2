@@ -2,97 +2,72 @@
   <h1 class="mat-display">02 Experience</h1>
 
   <mat-tab-group mat-align-tabs="center">
-    <mat-tab label="RDE Systems">
-      <div class="container"
-      fxLayoutAlign="center"
-      fxLayout="row"
-      fxLayout.xs="column"
-      fxLayoutGap="30px">
-      <div fxFlex="40%">
-        <my-browser>
-          <img class="experience-pic" src="assets/images/rde_messaging.png" alt="RDE Messaging System">
-        </my-browser>
-        <div class="tech">
-          <mat-chip-list>
-            <mat-chip>Angular</mat-chip>
-            <mat-chip>Bootstrap</mat-chip>
-            <mat-chip>HTML/CSS</mat-chip>
-            <mat-chip>Coldfusion</mat-chip>
-            <mat-chip>REST APIs</mat-chip>
-          </mat-chip-list>
-        </div>
-        
-      </div>
-      <div class="experience-desc" fxFlex="40%">
-        <h3>Computer Science Capstone @RDE Systems</h3> 
-        <p class="mat-caption">FEB 2018 - MAY 2018</p>
-        <ul>
-          <li>Designed and developed messaging system using Angular which encouraged AIDS patients to communicate with case workers.</li>    
-          <li>Created Coldfusion API and integrated messaging system into larger webapp for government AIDS Drug Assistance.</li>
-        </ul> 
-        <a mat-raised-button color="primary" routerLink=".">Read more</a>
-      </div>
-    </div>
-    </mat-tab>
+	  <mat-tab label="RDE Systems">
+			<experience-tab 
+			color="#4C4B63"
+			position="Capstone" 
+			company="RDE Systems" 
+			company_link="https://www.rde.org/"
+			image="assets/images/rde_messaging.png">
+				<mat-chip-list>
+					<mat-chip>Something</mat-chip>
+					<mat-chip>Angular</mat-chip>
+					<mat-chip>Bootstrap</mat-chip>
+					<mat-chip>HTML/CSS</mat-chip>
+					<mat-chip>Coldfusion</mat-chip>
+					<mat-chip>REST APIs</mat-chip>
+				</mat-chip-list>
+
+				<p class="mat-caption">FEB 2018 - MAY 2018</p>
+				<ul>
+					<li>Designed and developed messaging system using Angular which encouraged AIDS patients to communicate with case workers.</li>    
+					<li>Created Coldfusion API and integrated messaging system into larger webapp for government AIDS Drug Assistance.</li>
+				</ul> 
+			</experience-tab>
+	  </mat-tab>
+	
     <mat-tab label="Trillium">
-      <div class="container"
-      fxLayoutAlign="center"
-      fxLayout="row"
-      fxLayout.xs="column"
-      fxLayoutGap="30px">
-        <my-browser fxFlex="40%">
-            <img class="experience-pic" src="assets/images/rde_messaging.png" alt="RDE Messaging System">
-        </my-browser>
-        <div class="experience-desc" fxFlex="40%">
-          <h3>Trillium</h3>  
-          <p>Trillium is a high stakes trading company located in New York City. At Trillium LABS, I collaborated with a team web app to display trading data in graphical and intuitive manner using WebGL, HTML5 canvas, and JS. I added new features based on customer feedback such as resizable windows, graphical functions, zoom, and stock search which simplified user interactions and provided better market picture. Furthermore, I responded to ticket issues, developed bug fixes, & pushed changes using JIRA and TortoiseSVN.</p>
-        </div>
-      </div>
-    </mat-tab>
+		<experience-tab
+		position="Software Engineering Intern"
+		company="Trillium"
+		company_link="https://www.trlm.com/"
+		image="https://www.trlm.com/wp-content/uploads/2017/09/Market-App-3-Replay-Trading-Sequences-2.gif">
+			<mat-chip-list>
+				<mat-chip>Javascript</mat-chip>
+				<mat-chip>WebGL</mat-chip>
+				<mat-chip>HTML/CSS</mat-chip>
+				<mat-chip>JIRA</mat-chip>
+				<mat-chip>TortoiseSVN</mat-chip>
+			</mat-chip-list>
+			<p class="mat-caption">JUN 2016 - APR 2017</p>
+			<ul>
+				<li>Collaborated with a team to create a web app to display trading data in graphical and intuitive manner using WebGL, HTML5 canvas, and JS.</li>
+				<li>Added new features based on customer feedback such as resizable windows, graphical functions, zoom, and stock search which simplified user interactions and provided better market picture.</li>
+				<li>Responded to ticket issues, developed bug fixes, & pushed changes using JIRA and TortoiseSVN.</li>              
+			</ul>
+		</experience-tab>
+	</mat-tab>
+	
     <mat-tab label="Forbes">
-        <div class="container"
-        fxLayoutAlign="center"
-        fxLayout="row"
-        fxLayout.xs="column"
-        fxLayoutGap="30px">
-          <my-browser fxFlex="40%">
-              <img class="experience-pic" src="assets/images/rde_messaging.png" alt="RDE Messaging System">
-          </my-browser>
-          <div class="experience-desc" fxFlex="40%">
-            <h3>Forbes</h3>  
-            <p>At Forbes Media, I worked on the Forbes website and aided the team focused on advertisements. I analyzed Adblock development trends and contributed to creation of “adblock blocker” which increased company revenue. I gained experience with Google Tag Manager V2 & Google Analytics, SpringMVC, and website template design. I also obtained experience with Git & Code Review via Phabricator/Arcanist.</p>              </div>
-        </div>
+		<experience-tab
+		company="Forbes"
+		company_link="https://forbes.com/"
+		position="Technology Intern"
+		image="https://www.vandelaydesign.com/wp-content/uploads/01-forbes-adblock-whitelist.jpg">
+			<mat-chip-list>
+                <mat-chip>Java</mat-chip>
+                <mat-chip>Google Tag Manager</mat-chip>
+                <mat-chip>SpringMVC</mat-chip>
+                <mat-chip>Git</mat-chip>
+                <mat-chip>Phabricator</mat-chip>
+			</mat-chip-list>
+			<p class="mat-caption">JUN 2015 - AUG 2015</p>
+			<ul>
+				<li>Analyzed Adblock development trends and contributed to creation of “adblock blocker” which increased company revenue.</li>
+				<li>Gained experience with Google Tag Manager V2 & Google Analytics, SpringMVC, and website template design.</li>
+				<li>Obtained experience with Git & Code Review via Phabricator/Arcanist.</li>
+			</ul>
+		</experience-tab>
     </mat-tab>
   </mat-tab-group>
-  <!-- <mat-vertical-stepper>
-
-    <ng-template matStepperIcon="edit">
-      <mat-icon>chevron_right</mat-icon>
-    </ng-template>
-    <ng-template matStepperIcon="active">
-      <mat-icon>chevron_right</mat-icon>
-    </ng-template>
-    <ng-template matStepperIcon="readmore">
-        <mat-icon>expand_more</mat-icon>
-    </ng-template> 
-
-    <mat-step label="RDE Systems" state="readmore">
-      <div>
-        <p>Something about RDE</p>
-      </div>
-    </mat-step>
-
-    <mat-step label="Trillium LABS" state="readmore">
-      <div>
-        <p>Something about Trillium</p>
-      </div>
-    </mat-step>
-
-    <mat-step label="Forbes">
-      <div>
-        <p>Something about Forbes</p>
-      </div>
-    </mat-step>
-
-  </mat-vertical-stepper> -->
 </div>

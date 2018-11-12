@@ -9,11 +9,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatStepperModule, MatTabsModule, MatChipsModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatTabsModule, MatChipsModule, MatDialogModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutComponent } from './about/about.component';
 import { BrowserComponent } from './browser/browser.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { ExperienceComponent, ExperienceDialogComponent } from './experience/experience.component';
+import { ExperienceTabComponent } from './experience/experience-tab.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { ExperienceComponent } from './experience/experience.component';
     NavbarComponent,
     AboutComponent,
     BrowserComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ExperienceDialogComponent,
+    ExperienceTabComponent
   ],
   imports: [
     BrowserModule,
@@ -37,9 +40,12 @@ import { ExperienceComponent } from './experience/experience.component';
     MatListModule,
     MatCardModule,
     FlexLayoutModule,
-    MatStepperModule,
     MatTabsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    ExperienceDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
