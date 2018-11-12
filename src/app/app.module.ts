@@ -13,8 +13,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutComponent } from './about/about.component';
 import { BrowserComponent } from './browser/browser.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { ExperienceTabComponent, ExperienceDialogComponent } from './experience/experience-tab.component';
+import { ExperienceComponent, ExperienceDialogComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { ExperienceTabComponent, ExperienceDialogComponent } from './experience/
     BrowserComponent,
     ExperienceComponent,
     ExperienceDialogComponent,
-    ExperienceTabComponent
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

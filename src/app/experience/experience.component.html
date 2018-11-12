@@ -2,71 +2,32 @@
   <h1 class="mat-display">02 Experience</h1>
 
   <mat-tab-group mat-align-tabs="center" dynamicHeight>
-	  <mat-tab label="RDE Systems">
-			<experience-tab 
-			color="#4C4B63"
-			position="Capstone" 
-			company="RDE Systems" 
-			company_link="https://www.rde.org/"
-			image="assets/images/rde_messaging.png">
-				<mat-chip-list>
-					<mat-chip>Angular</mat-chip>
-					<mat-chip>Bootstrap</mat-chip>
-					<mat-chip>HTML/CSS</mat-chip>
-					<mat-chip>Coldfusion</mat-chip>
-					<mat-chip>REST APIs</mat-chip>
-				</mat-chip-list>
-
-				<p class="mat-caption">FEB 2018 - MAY 2018</p>
-				<ul>
-					<li>Designed and developed messaging system using Angular which encouraged AIDS patients to communicate with case workers.</li>    
-					<li>Created Coldfusion API and integrated messaging system into larger webapp for government AIDS Drug Assistance.</li>
-				</ul> 
-			</experience-tab>
+	  <mat-tab *ngFor="let exp of experiences" [label]="exp.company">
+			<div class="container"
+			fxLayoutAlign="center"
+			fxLayout="row"
+			fxLayout.xs="column"
+			fxLayoutGap="30px">
+				<div fxFlex="60%">
+					<my-browser [color]="exp.color">
+						<img class="experience-pic" [src]="exp.image" alt="Experience site">
+					</my-browser>
+					<div class="tech">
+						<mat-chip-list>
+							<mat-chip *ngFor="let skill of exp.skills">{{skill}}</mat-chip>
+						</mat-chip-list>
+					</div> 
+				</div>
+			
+				<div class="experience-desc" fxFlex="40%">
+					<h3>{{exp.position}} <a [href]="exp.company_link" target="_blank">@{{exp.company}}</a></h3> 
+					<p class="mat-caption">{{exp.date}}</p>
+					<ul *ngFor="let bullet of exp.desc">
+						<li>{{bullet}}</li>    
+					</ul> 
+					<button mat-raised-button color="primary" (click)="openDialog()">Read more</button>
+				</div>
+			</div>			
 	  </mat-tab>
-	
-    <mat-tab label="Trillium">
-		<experience-tab
-		position="Software Engineering Intern"
-		company="Trillium"
-		company_link="https://www.trlm.com/"
-		image="https://www.trlm.com/wp-content/uploads/2017/09/Market-App-3-Replay-Trading-Sequences-2.gif">
-			<mat-chip-list>
-				<mat-chip>Javascript</mat-chip>
-				<mat-chip>WebGL</mat-chip>
-				<mat-chip>HTML/CSS</mat-chip>
-				<mat-chip>JIRA</mat-chip>
-				<mat-chip>TortoiseSVN</mat-chip>
-			</mat-chip-list>
-			<p class="mat-caption">JUN 2016 - APR 2017</p>
-			<ul>
-				<li>Collaborated with a team to create a web app to display trading data in graphical and intuitive manner using WebGL, HTML5 canvas, and JS.</li>
-				<li>Added new features based on customer feedback such as resizable windows, graphical functions, zoom, and stock search which simplified user interactions and provided better market picture.</li>
-				<li>Responded to ticket issues, developed bug fixes, & pushed changes using JIRA and TortoiseSVN.</li>              
-			</ul>
-		</experience-tab>
-	</mat-tab>
-	
-    <mat-tab label="Forbes">
-		<experience-tab
-		company="Forbes"
-		company_link="https://forbes.com/"
-		position="Technology Intern"
-		image="https://www.vandelaydesign.com/wp-content/uploads/01-forbes-adblock-whitelist.jpg">
-			<mat-chip-list>
-                <mat-chip>Java</mat-chip>
-                <mat-chip>Google Tag Manager</mat-chip>
-                <mat-chip>SpringMVC</mat-chip>
-                <mat-chip>Git</mat-chip>
-                <mat-chip>Phabricator</mat-chip>
-			</mat-chip-list>
-			<p class="mat-caption">JUN 2015 - AUG 2015</p>
-			<ul>
-				<li>Analyzed Adblock development trends and contributed to creation of “adblock blocker” which increased company revenue.</li>
-				<li>Gained experience with Google Tag Manager V2 & Google Analytics, SpringMVC, and website template design.</li>
-				<li>Obtained experience with Git & Code Review via Phabricator/Arcanist.</li>
-			</ul>
-		</experience-tab>
-    </mat-tab>
   </mat-tab-group>
 </div>
