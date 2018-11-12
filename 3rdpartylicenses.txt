@@ -367,10 +367,7 @@ Apache-2.0
 @angular/core
 MIT
 
-@angular/common
-MIT
-
-@angular/platform-browser
+@angular/animations
 MIT
 
 @angular/cdk
@@ -398,12 +395,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/material/toolbar
-
-@angular/animations
+@angular/common
 MIT
 
-@angular/material/button
+@angular/platform-browser
+MIT
+
+@angular/material/dialog
 
 @angular/flex-layout
 MIT
@@ -635,8 +633,16 @@ THE SOFTWARE.
 >>>>>>> Initial commit
 
 
+@angular/material/button
+
+@angular/material/toolbar
+
+@angular/material/tabs
+
 @angular/forms
 MIT
+
+@angular/material/chips
 
 @material/base
 Apache-2.0
