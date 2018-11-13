@@ -2,9 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material';
 
 export interface DialogData {
-  company: 'RDE Systems' | 'Trillium' | 'Forbes';
+  company_name: 'RDE Systems' | 'Trillium' | 'Forbes';
 }
-
 
 @Component({
   selector: 'app-experience',
@@ -39,7 +38,7 @@ export class ExperienceComponent implements OnInit {
     },
     {
       company: 'Forbes',
-      position: 'Technology Intern'
+      position: 'Technology Intern',
       company_link: 'https://forbes.com/',
       image: 'https://www.vandelaydesign.com/wp-content/uploads/01-forbes-adblock-whitelist.jpg',
       skills: ['Java', 'Google Tag Manager', 'SpringMVC', 'Git', 'Phabricator'],
@@ -53,11 +52,11 @@ export class ExperienceComponent implements OnInit {
 
   constructor(public dialog:MatDialog) { }
 
-  openDialog() {
+  openDialog(company: string) {
     this.dialog.open(ExperienceDialogComponent, {
       maxWidth: '700px',
       data: {
-          company: this.company
+          company_name: company
       }
     });
   }

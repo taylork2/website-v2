@@ -1,33 +1,48 @@
-<div id="experience" class="experience-bg wrapper">
+<div id="experience" class="experience-bg wrapper" myMatchHeight="mat-tab-body">
   <h1 class="mat-display">02 Experience</h1>
 
   <mat-tab-group mat-align-tabs="center" dynamicHeight>
-	  <mat-tab *ngFor="let exp of experiences" [label]="exp.company">
-			<div class="container"
-			fxLayoutAlign="center"
-			fxLayout="row"
-			fxLayout.xs="column"
-			fxLayoutGap="30px">
-				<div fxFlex="60%">
-					<my-browser [color]="exp.color">
-						<img class="experience-pic" [src]="exp.image" alt="Experience site">
-					</my-browser>
-					<div class="tech">
-						<mat-chip-list>
-							<mat-chip *ngFor="let skill of exp.skills">{{skill}}</mat-chip>
-						</mat-chip-list>
-					</div> 
-				</div>
-			
-				<div class="experience-desc" fxFlex="40%">
-					<h3>{{exp.position}} <a [href]="exp.company_link" target="_blank">@{{exp.company}}</a></h3> 
-					<p class="mat-caption">{{exp.date}}</p>
-					<ul *ngFor="let bullet of exp.desc">
-						<li>{{bullet}}</li>    
-					</ul> 
-					<button mat-raised-button color="primary" (click)="openDialog()">Read more</button>
-				</div>
-			</div>			
-	  </mat-tab>
+    <mat-tab *ngFor="let exp of experiences" [label]="exp.company">
+      <div
+        class="container"
+        fxLayoutAlign="center"
+        fxLayout="row"
+        fxLayout.lt-sm="column"
+        fxLayoutGap="30px"
+      >
+        <div fxFlex="60%">
+          <my-browser [color]="exp.color">
+            <img
+              class="experience-pic"
+              [src]="exp.image"
+              alt="Experience site"
+            />
+          </my-browser>
+          <div class="tech">
+            <mat-chip-list>
+              <mat-chip *ngFor="let skill of exp.skills">{{ skill }}</mat-chip>
+            </mat-chip-list>
+          </div>
+        </div>
+
+        <div class="experience-desc" fxFlex="40%">
+          <h3>
+            {{ exp.position }}
+            <a [href]="exp.company_link" target="_blank">@{{ exp.company }}</a>
+          </h3>
+          <p class="mat-caption">{{ exp.date }}</p>
+          <ul *ngFor="let bullet of exp.desc">
+            <li>{{ bullet }}</li>
+          </ul>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="openDialog(exp.company)"
+          >
+            Read more
+          </button>
+        </div>
+      </div>
+    </mat-tab>
   </mat-tab-group>
 </div>

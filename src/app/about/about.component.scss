@@ -1,22 +1,29 @@
 .about-bg {
-    background: #5386E4;
-    padding-top: 100px; 
-    padding-bottom: 100px;
+  background: #5386e4;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-bg {
+    padding: 40px;
+  }
 }
 
 .about {
-    color: white;
+  color: white;
 
-    .mat-title {
-        color: black;
-    }
+  .mat-title {
+    color: black;
+  }
 }
 
 .terminal {
-    box-sizing: border-box;
-    padding: 20px;
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: black;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: black;
 }
