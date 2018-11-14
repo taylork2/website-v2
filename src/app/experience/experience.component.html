@@ -1,4 +1,4 @@
-<div id="experience" class="experience-bg wrapper" myMatchHeight="mat-tab-body">
+<div id="experience" class="experience-bg wrapper">
   <h1 class="mat-display">02 Experience</h1>
 
   <mat-tab-group mat-align-tabs="center" dynamicHeight>
@@ -10,7 +10,7 @@
         fxLayout.lt-sm="column"
         fxLayoutGap="30px"
       >
-        <div fxFlex="60%">
+        <div fxFlex.gt-xs="60%" fxFlex="0 1 auto">
           <my-browser [color]="exp.color">
             <img
               class="experience-pic"
@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <div class="experience-desc" fxFlex="40%">
+        <div class="experience-desc" fxFlex.gt-xs="40%" fxFlex="0 1 auto">
           <h3>
             {{ exp.position }}
             <a [href]="exp.company_link" target="_blank">@{{ exp.company }}</a>
