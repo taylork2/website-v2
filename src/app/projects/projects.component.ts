@@ -14,7 +14,9 @@ export class ProjectsComponent implements OnInit {
       title: "Praise the Sun",
       desc:
         'Praise the Sun is a game reimagining the popular flash game "Cookie Clicker." This was made for the Global Game Jam in 2016. Click the link below for more information.',
-      skills: ["HTML/CSS", "Javascript"]
+      skills: ["HTML/CSS", "Javascript"],
+      github_link: "https://github.com/taylork2/PraiseTheSun",
+      other_link: "http://taylork2.github.io/PraiseTheSun/"
     },
     {
       image_location: "right",
@@ -22,7 +24,8 @@ export class ProjectsComponent implements OnInit {
       title: "Save our Spaceship",
       desc:
         "Save Our Spaceship (S.O.S.) is a two-player co-op game created with HTML5 canvas and Javascript where players are in separate rooms of the ship. One player in the control room controls the orientation of player two’s room and players must communicate to escape. ",
-      skills: ["HTML/CSS", "canvas", "Javascript"]
+      skills: ["HTML/CSS", "canvas", "Javascript"],
+      github_link: "https://github.com/taylork2/saveOurSpaceShip"
     },
     {
       image_location: "left",

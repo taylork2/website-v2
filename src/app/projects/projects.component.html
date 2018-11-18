@@ -23,11 +23,23 @@
           <h2>{{ project.title }}</h2>
           <p>{{ project.desc }}</p>
           <a
-            mat-raised-button
-            href="http://taylork2.github.io/PraiseTheSun/"
+            *ngIf="project.github_link"
+            mat-icon-button
+            [href]="project.github_link"
             target="_blank"
-            >Play the game!</a
           >
+            <span style="font-size: 2em"><i class="fab fa-github"></i> </span>
+          </a>
+          <a
+            *ngIf="project.other_link"
+            mat-icon-button
+            [href]="project.other_link"
+            target="_blank"
+          >
+            <span style="font-size: 2em"
+              ><i class="fas fa-external-link-alt"></i
+            ></span>
+          </a>
           <div class="tech">
             <mat-chip-list>
               <mat-chip *ngFor="let skill of project.skills">{{
