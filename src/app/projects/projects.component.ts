@@ -11,6 +11,7 @@ export class ProjectsComponent implements OnInit {
       image_location: "left",
       image:
         "https://globalgamejam.org/sites/default/files/styles/game_sidebar__wide/public/game/featured_image/main_28.png?itok=DSRJXs8w&timestamp=1454276436",
+      color: "#5386E4",
       title: "Praise the Sun",
       desc:
         'Praise the Sun is a game reimagining the popular flash game "Cookie Clicker." This was made for the Global Game Jam in 2016. Click the link below for more information.',
@@ -21,6 +22,7 @@ export class ProjectsComponent implements OnInit {
     {
       image_location: "right",
       image: "assets/images/saveourspaceship.png",
+      color: "#0D1B1E",
       title: "Save our Spaceship",
       desc:
         "Save Our Spaceship (S.O.S.) is a two-player co-op game created with HTML5 canvas and Javascript where players are in separate rooms of the ship. One player in the control room controls the orientation of player two’s room and players must communicate to escape. ",
@@ -30,6 +32,7 @@ export class ProjectsComponent implements OnInit {
     {
       image_location: "left",
       image: "assets/images/autograder.png",
+      color: "#7798AB",
       title: "Exam Auto-grader",
       desc:
         "For my university’s CS100 class, Professors and their Teacher’s Assistants would hand grade every student exam. My team and I created a system that would allow teachers to create questions and collate them into an exam which students could take. The system would then automatically grade the exam for professors to review.",

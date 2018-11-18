@@ -15,7 +15,7 @@
           fxFlex="30%"
           [fxFlexOrder]="project.image_location === 'left' ? 1 : 2"
         >
-          <my-browser>
+          <my-browser [color]="project.color">
             <img [src]="project.image" alt="Photo of project" />
           </my-browser>
         </div>
