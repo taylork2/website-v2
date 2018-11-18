@@ -6,6 +6,44 @@
   box-sizing: border-box;
 }
 
+.mat-display {
+  text-align: center;
+}
+
+.project-tile {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .project-tile {
+    display: grid !important;
+    grid-template: auto/auto;
+    margin-bottom: 40px;
+  }
+
+  .browser-container {
+    grid-area: 1/-1 !important;
+    max-height: none !important;
+    margin-bottom: 0 !important;
+  }
+
+  my-browser {
+    height: 100%;
+
+    img {
+      height: 100%;
+      opacity: 0.25;
+      object-fit: cover;
+    }
+  }
+
+  .project-desc {
+    padding: 15px;
+    grid-area: 1/-1 !important;
+    z-index: 10;
+  }
+}
+
 img {
   width: 100%;
   vertical-align: bottom;
