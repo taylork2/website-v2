@@ -403,6 +403,8 @@ MIT
 
 @angular/material/dialog
 
+@angular/material/tabs
+
 @angular/flex-layout
 MIT
 <<<<<<< HEAD
@@ -633,16 +635,14 @@ THE SOFTWARE.
 >>>>>>> Initial commit
 
 
-@angular/material/button
-
-@angular/material/toolbar
-
-@angular/material/tabs
-
 @angular/forms
 MIT
 
 @angular/material/chips
+
+@angular/material/button
+
+@angular/material/toolbar
 
 @material/base
 Apache-2.0
