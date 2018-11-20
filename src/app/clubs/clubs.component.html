@@ -1,0 +1,18 @@
+<div class="clubs-bg wrapper">
+  <h1>05 Other Projects</h1>
+  <div
+    class="container"
+    fxLayout="row wrap"
+    fxLayout.lt-sm="column"
+    fxLayoutGap="20px"
+    fxLayoutAlign="center"
+  >
+    <my-browser *ngFor="let club of clubs" fxFlex="1 1 0">
+      <div class="club-desc">
+        <h2>{{ club.club }}</h2>
+        <p class="mat-caption">{{ club.position }}</p>
+        <p>{{ club.desc }}</p>
+      </div>
+    </my-browser>
+  </div>
+</div>
