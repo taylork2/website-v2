@@ -17,10 +17,9 @@ export class NavbarComponent {
       var el = document.getElementById("navbar");
 
       if (currentPageOffset < initialPageOffset) {
-        el.style.top = "0";
-        console.log("scroll up");
+        el.style.transform = "translate(0,0)";
       } else {
-        el.style.top = "-65px";
+        el.style.transform = "translate(0, -100%)";
       }
 
       initialPageOffset = currentPageOffset;
