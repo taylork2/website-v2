@@ -6,4 +6,12 @@
 
 .club-desc {
   padding: 20px;
+
+  .link {
+    float: right;
+
+    .fas {
+      font-size: 1.2em;
+    }
+  }
 }
