@@ -1,20 +1,23 @@
-<div
-  class="container wrapper welcome"
-  fxLayoutGap="50px"
-  fxLayout="row"
-  fxLayout.lt-sm="column"
->
-  <my-browser fxFlex="30%">
-    <img class="pic" src="assets/images/linked_in.jpg" alt="Photo of Me!" />
-  </my-browser>
+<div class="welcome-bg" id="welcome">
+  <div
+    class="container wrapper welcome"
+    fxLayoutGap="50px"
+    fxLayoutGap.lt-sm="40px"
+    fxLayout="row"
+    fxLayout.lt-sm="column"
+  >
+    <my-browser color="#fafafa" fxFlex="30%" fxFlexOrder.lt-sm="2">
+      <img class="pic" src="assets/images/linked_in.jpg" alt="Photo of Me!" />
+    </my-browser>
 
-  <div class="welcome-desc" fxFlex="auto">
-    <h2 class="mat-title">> Hello World!</h2>
-    <h1 class="mat-display-4 name">I'm Taylor Tu.</h1>
-    <h3 class="tagline">Software Developer && Creator</h3>
-    <p>
-      I am a software developer based in Toronto, ON. I have a passion for
-      creating things - whether it be apps or algorithms or designs.
-    </p>
+    <div class="welcome-desc" fxFlex="auto" fxFlexOrder.lt-sm="1">
+      <h2 class="mat-title hello">> Hello World!</h2>
+      <h1 class="mat-display-4 name">I'm Taylor Tu.</h1>
+      <h3 class="tagline">Software Developer && Creator</h3>
+      <p>
+        I am a software developer based in Toronto, ON. I have a passion for
+        creating things - whether it be apps or algorithms or designs.
+      </p>
+    </div>
   </div>
 </div>
