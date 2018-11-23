@@ -644,6 +644,10 @@ MIT
 
 @angular/material/toolbar
 
+@angular/material/icon
+
+@angular/material/menu
+
 @material/base
 Apache-2.0
 
