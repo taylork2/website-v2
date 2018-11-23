@@ -26,6 +26,14 @@ body {
   color: $mdc-theme-black;
 }
 
+.headline {
+  font-weight: bold;
+}
+
+.num {
+  font-family: "Inconsolata", monospace;
+}
+
 .wrapper {
   margin-right: auto;
   margin-left: auto;
