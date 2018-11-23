@@ -18,8 +18,13 @@ export class NavbarComponent {
 
       if (currentPageOffset < initialPageOffset) {
         el.style.transform = "translate(0,0)";
+        el.classList.add("nav-scroll");
       } else {
         el.style.transform = "translate(0, -100%)";
+      }
+
+      if (currentPageOffset === 0) {
+        el.classList.remove("nav-scroll");
       }
 
       initialPageOffset = currentPageOffset;

@@ -1,21 +1,16 @@
-.sidenav-container {
-  height: 100%;
-}
-
-.sidenav {
-  width: 200px;
-}
-
-.sidenav .mat-toolbar {
-  background: inherit;
-}
-
 .mat-toolbar {
+  transition: all 0.3s ease;
+  will-change: transform;
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: all 0.5s ease;
-  will-change: transform;
+  background-color: white;
+  height: 80px;
+}
+
+.nav-scroll {
+  box-shadow: #676a6b 0px 2px 4px;
+  height: 65px;
 }
 
 .num {
