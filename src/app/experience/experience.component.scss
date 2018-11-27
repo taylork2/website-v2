@@ -1,10 +1,32 @@
+@import "../../website-colors.scss";
+
 .experience-bg {
   box-sizing: border-box;
   text-align: center;
+  background-color: map-get($website-blue, 800);
+  color: $mdc-theme-background;
 }
 
 .container {
+  margin: 30px;
   height: 510px;
+
+  .tech {
+    margin-top: 30px;
+  }
+
+  .experience-pic {
+    vertical-align: bottom;
+    width: 100%;
+  }
+
+  .experience-desc {
+    text-align: left;
+
+    .desc-li {
+      font-family: "Inconsolata", sans-serif;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -23,21 +45,4 @@
     align-items: start;
     height: 865px;
   }
-}
-
-.container {
-  margin: 30px;
-
-  .experience-desc {
-    text-align: left;
-  }
-}
-
-.tech {
-  margin-top: 30px;
-}
-
-.experience-pic {
-  vertical-align: bottom;
-  width: 100%;
 }
