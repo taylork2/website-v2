@@ -7,6 +7,11 @@
   color: $mdc-theme-background;
 }
 
+::ng-deep .mat-tab-list .mat-tab-label {
+  color: $mdc-theme-background;
+  font-weight: bold;
+}
+
 .container {
   margin: 30px;
   height: 510px;
