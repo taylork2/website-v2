@@ -1,0 +1,39 @@
+// some blox material theme variables, e.g.:
+$mdc-theme-primary: #5386e4;
+$mdc-theme-accent: #9efffa;
+$mdc-theme-secondary: #4c4b63;
+$mdc-theme-black: #0d1b1e;
+$mdc-theme-background: #fafafa;
+
+$website-blue: (
+  50: #e5f2fe,
+  100: #c1ddfd,
+  200: #9cc9fb,
+  300: #79b4f8,
+  400: #64a3f6,
+  500: #5794f3,
+  600: #5386e4,
+  700: #4d74d0,
+  800: #4862bd,
+  900: #3e449d,
+  A100: #53cee4,
+  A200: #83dded,
+  A300: #b3eaf4,
+  A400: #e1f7fb,
+  contrast: (
+    50: $mdc-theme-black,
+    100: $mdc-theme-black,
+    200: $mdc-theme-black,
+    300: $mdc-theme-black,
+    400: $mdc-theme-black,
+    500: $mdc-theme-black,
+    600: $mdc-theme-background,
+    700: $mdc-theme-background,
+    800: $mdc-theme-background,
+    900: $mdc-theme-background,
+    A100: #53cee4,
+    A200: #83dded,
+    A300: #b3eaf4,
+    A400: #e1f7fb
+  )
+);
