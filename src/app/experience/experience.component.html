@@ -1,48 +1,56 @@
-<div id="experience" class="experience-bg wrapper">
-  <h1 class="mat-display-1 headline"><span class="num">02</span> Experience</h1>
+<div id="experience" class="experience-bg">
+  <div class="wrapper">
+    <h1 class="mat-display-1 headline">
+      <span class="num">02</span> Experience
+    </h1>
 
-  <mat-tab-group mat-align-tabs="center" dynamicHeight>
-    <mat-tab *ngFor="let exp of experiences" [label]="exp.company">
-      <div
-        class="container"
-        fxLayoutAlign="center"
-        fxLayout="row"
-        fxLayout.lt-sm="column"
-        fxLayoutGap="30px"
-      >
-        <div fxFlex.gt-xs="60%" fxFlex="0 1 auto">
-          <my-browser [color]="exp.color">
-            <img
-              class="experience-pic"
-              [src]="exp.image"
-              alt="Experience site"
-            />
-          </my-browser>
-          <div class="tech">
-            <mat-chip-list>
-              <mat-chip *ngFor="let skill of exp.skills">{{ skill }}</mat-chip>
-            </mat-chip-list>
+    <mat-tab-group mat-align-tabs="center" dynamicHeight>
+      <mat-tab *ngFor="let exp of experiences" [label]="exp.company">
+        <div
+          class="container"
+          fxLayoutAlign="center"
+          fxLayout="row"
+          fxLayout.lt-sm="column"
+          fxLayoutGap="30px"
+        >
+          <div fxFlex.gt-xs="60%" fxFlex="0 1 auto">
+            <my-browser [color]="exp.color">
+              <img
+                class="experience-pic"
+                [src]="exp.image"
+                alt="Experience site"
+              />
+            </my-browser>
+            <div class="tech">
+              <mat-chip-list>
+                <mat-chip *ngFor="let skill of exp.skills">{{
+                  skill
+                }}</mat-chip>
+              </mat-chip-list>
+            </div>
+          </div>
+
+          <div class="experience-desc" fxFlex.gt-xs="40%" fxFlex="0 1 auto">
+            <h3>
+              {{ exp.position }}
+              <a [href]="exp.company_link" target="_blank"
+                >@{{ exp.company }}</a
+              >
+            </h3>
+            <p class="mat-caption">{{ exp.date }}</p>
+            <ul *ngFor="let bullet of exp.desc">
+              <li>{{ bullet }}</li>
+            </ul>
+            <button
+              mat-raised-button
+              color="primary"
+              (click)="openDialog(exp.company)"
+            >
+              Read more
+            </button>
           </div>
         </div>
-
-        <div class="experience-desc" fxFlex.gt-xs="40%" fxFlex="0 1 auto">
-          <h3>
-            {{ exp.position }}
-            <a [href]="exp.company_link" target="_blank">@{{ exp.company }}</a>
-          </h3>
-          <p class="mat-caption">{{ exp.date }}</p>
-          <ul *ngFor="let bullet of exp.desc">
-            <li>{{ bullet }}</li>
-          </ul>
-          <button
-            mat-raised-button
-            color="primary"
-            (click)="openDialog(exp.company)"
-          >
-            Read more
-          </button>
-        </div>
-      </div>
-    </mat-tab>
-  </mat-tab-group>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
 </div>
