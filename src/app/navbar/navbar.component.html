@@ -1,27 +1,33 @@
-<mat-toolbar id="navbar" color="primary">
-  <span class="fill-remaining-space"></span>
-  <span fxShow="true" fxHide.lt-md="true">
-    <a href="#about" mat-button><span class="num">01 </span>About Me</a>
-    <a href="#experience" mat-button><span class="num">02 </span>Experience</a>
-    <a href="#projects" mat-button
-      ><span class="num">03 </span>Selected Works
-    </a>
-    <a href="#clubs" mat-button><span class="num">04 </span>Other Projects</a>
-  </span>
-  <span fxShow="true" fxHide.gt-sm="true"
-    ><button mat-icon-button [matMenuTriggerFor]="submenu">
-      <mat-icon>menu</mat-icon>
-    </button></span
-  >
-</mat-toolbar>
+<div class="nav-bg">
+  <mat-toolbar id="navbar" color="primary">
+    <span class="fill-remaining-space"></span>
+    <span fxShow="true" fxHide.lt-md="true">
+      <a href="#about" mat-button><span class="num">01 </span>About Me</a>
+      <a href="#experience" mat-button
+        ><span class="num">02 </span>Experience</a
+      >
+      <a href="#projects" mat-button
+        ><span class="num">03 </span>Selected Works
+      </a>
+      <a href="#clubs" mat-button><span class="num">04 </span>Other Projects</a>
+    </span>
+    <span fxShow="true" fxHide.gt-sm="true"
+      ><button mat-icon-button [matMenuTriggerFor]="submenu">
+        <mat-icon>menu</mat-icon>
+      </button></span
+    >
+  </mat-toolbar>
 
-<mat-menu #submenu="matMenu">
-  <a href="#about" mat-menu-item><span class="num">01 </span>About Me</a>
-  <a href="#experience" mat-menu-item><span class="num">02 </span>Experience</a>
-  <a href="#projects" mat-menu-item
-    ><span class="num">03 </span>Selected Works</a
+  <mat-menu #submenu="matMenu">
+    <a href="#about" mat-menu-item><span class="num">01 </span>About Me</a>
+    <a href="#experience" mat-menu-item
+      ><span class="num">02 </span>Experience</a
+    >
+    <a href="#projects" mat-menu-item
+      ><span class="num">03 </span>Selected Works</a
+    >
+    <a href="#clubs" mat-menu-item
+      ><span class="num">04 </span>Other Projects</a
+    ></mat-menu
   >
-  <a href="#clubs" mat-menu-item
-    ><span class="num">04 </span>Other Projects</a
-  ></mat-menu
->
+</div>
