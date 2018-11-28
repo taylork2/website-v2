@@ -1,6 +1,8 @@
+@import "../../website-colors.scss";
+
 .projects-bg {
-  background-color: #4c4b63;
-  color: #fafafa;
+  background-color: $mdc-theme-background;
+  color: $mdc-theme-black;
   box-sizing: border-box;
 }
 
@@ -9,7 +11,20 @@
 }
 
 .project-tile {
-  margin-top: 20px;
+  margin-top: 50px;
+
+  .mat-title {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  mat-chip {
+    font-family: "Inconsolata", sans-serif;
+    color: $mdc-theme-primary;
+    border: solid 1px $mdc-theme-primary;
+    border-radius: 0;
+    background-color: transparent;
+  }
 }
 
 @media screen and (max-width: 600px) {

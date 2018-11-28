@@ -17,36 +17,40 @@
           fxFlex="30%"
           [fxFlexOrder]="project.image_location === 'left' ? 1 : 2"
         >
-          <my-browser [color]="project.color">
+          <my-browser color="#5386E4">
             <img [src]="project.image" alt="Photo of project" />
           </my-browser>
         </div>
         <div class="project-desc" fxFlex="40%" fxFlexOrder="1">
-          <h2>{{ project.title }}</h2>
+          <h3 class="mat-title">
+            {{ project.title }}
+            <a
+              *ngIf="project.other_link"
+              mat-icon-button
+              [href]="project.other_link"
+              target="_blank"
+            >
+              <span style="font-size: 1.7em"
+                ><mat-icon>launch</mat-icon></span
+              > </a
+            ><a
+              *ngIf="project.github_link"
+              mat-icon-button
+              [href]="project.github_link"
+              target="_blank"
+            >
+              <span style="font-size: 1.5em; vertical-align: bottom"
+                ><i class="fab fa-github"></i>
+              </span>
+            </a>
+          </h3>
           <p>{{ project.desc }}</p>
-          <a
-            *ngIf="project.github_link"
-            mat-icon-button
-            [href]="project.github_link"
-            target="_blank"
-          >
-            <span style="font-size: 2em"><i class="fab fa-github"></i> </span>
-          </a>
-          <a
-            *ngIf="project.other_link"
-            mat-icon-button
-            [href]="project.other_link"
-            target="_blank"
-          >
-            <span style="font-size: 2em"
-              ><i class="fas fa-external-link-alt"></i
-            ></span>
-          </a>
+
           <div class="tech">
             <mat-chip-list>
-              <mat-chip *ngFor="let skill of project.skills">{{
-                skill
-              }}</mat-chip>
+              <mat-chip *ngFor="let skill of project.skills"
+                >> {{ skill }}</mat-chip
+              >
             </mat-chip-list>
           </div>
         </div>
