@@ -9,8 +9,13 @@
   height: 100%;
 }
 
+.browser .content {
+  transition-delay: 0.4s;
+}
+
 .browser:hover .content {
   background: $mdc-theme-primary;
+  transition-delay: 0s;
 }
 
 .dots {
@@ -42,4 +47,5 @@
   border: solid 5px;
   top: 20px;
   box-sizing: border-box;
+  overflow: hidden;
 }

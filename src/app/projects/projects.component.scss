@@ -27,8 +27,12 @@
   }
 }
 
+.browser-container img {
+  transition: all 0.4s ease-in-out;
+  will-change: opacity;
+}
+
 .browser-container:hover img {
-  transition: all 0.3s ease;
   opacity: 0.6;
 }
 
@@ -57,6 +61,7 @@
 
   .project-desc {
     padding: 15px;
+    padding-top: 30px;
     grid-area: 1/-1 !important;
     z-index: 10;
   }
