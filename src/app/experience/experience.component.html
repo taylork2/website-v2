@@ -11,14 +11,16 @@
           fxLayoutAlign="center"
           fxLayout="row"
           fxLayout.lt-sm="column"
-          fxLayoutGap="30px"
+          fxLayoutGap.gt-xs="30px"
+          fxLayoutGap.lt-sm="20px"
         >
-          <div fxFlex.gt-xs="60%" fxFlex="0 1 auto">
+          <div fxFlex.gt-xs="60%" fxFlex="0 1 auto" fxFlexOrder.lt-sm="2">
             <my-browser color="#0d1b1e">
               <img
                 class="experience-pic"
                 [src]="exp.image"
                 alt="Experience site"
+                (click)="openDialog(exp.company)"
               />
             </my-browser>
             <div class="tech">
@@ -30,7 +32,12 @@
             </div>
           </div>
 
-          <div class="experience-desc" fxFlex.gt-xs="40%" fxFlex="0 1 auto">
+          <div
+            class="experience-desc"
+            fxFlex.gt-xs="40%"
+            fxFlex="0 1 auto"
+            fxFlexOrder.lt-sm="1"
+          >
             <h3>
               {{ exp.position }}
               <a [href]="exp.company_link" target="_blank"
