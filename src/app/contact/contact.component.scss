@@ -9,10 +9,18 @@
     color: $mdc-theme-primary;
   }
   .mat-display-1 {
-    margin: 0;
+    margin: 10px;
+    font-size: 4vw;
   }
-
   .mat-icon-button i {
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-bg {
+    .mat-display-1 {
+      font-size: 10vw;
+    }
   }
 }
