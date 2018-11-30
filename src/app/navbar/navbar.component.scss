@@ -1,7 +1,7 @@
 @import "../../website-colors.scss";
 
 @media screen and (max-width: 600px) {
-  .headline {
+  .logo {
     margin-left: 0px !important;
   }
 }
@@ -14,10 +14,13 @@
   z-index: 100;
   height: 80px;
 
-  .headline {
+  .logo {
     margin-left: 30px;
+  }
+
+  .headline {
     border: 2px solid $mdc-theme-background;
-    line-height: 29px;
+    line-height: 26px;
     padding: 5px;
 
     .num {
