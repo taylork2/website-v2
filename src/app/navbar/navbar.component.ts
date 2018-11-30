@@ -5,10 +5,12 @@ import { initDomAdapter } from "@angular/platform-browser/src/browser";
 @Component({
   selector: "app-navbar",
   templateUrl: "./navbar.component.html",
-  styleUrls: ["./navbar.component.css"]
+  styleUrls: ["./navbar.component.scss"]
 })
 export class NavbarComponent {
   constructor() {}
+
+  scrollToSection = function() {};
 
   ngOnInit() {
     var initialPageOffset = window.pageYOffset;

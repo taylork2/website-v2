@@ -30,6 +30,7 @@ import {
 } from "./experience/experience.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ClubsComponent } from "./clubs/clubs.component";
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ClubsComponent } from "./clubs/clubs.component";
     ExperienceComponent,
     ExperienceDialogComponent,
     ProjectsComponent,
-    ClubsComponent
+    ClubsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
