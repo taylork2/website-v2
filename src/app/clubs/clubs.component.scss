@@ -7,6 +7,8 @@
 
 .club-desc {
   padding: 20px;
+  background-color: map-get($website-blue, 100);
+  height: 100%;
 
   .mat-title {
     font-weight: bold;
