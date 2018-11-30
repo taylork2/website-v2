@@ -1,9 +1,17 @@
+@import "../../website-colors.scss";
+
 .clubs-bg {
   box-sizing: border-box;
+  background-color: map-get($website-blue, 100);
 }
 
 .club-desc {
   padding: 20px;
+
+  .mat-title {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 
   .link {
     float: right;
