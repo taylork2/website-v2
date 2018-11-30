@@ -1,50 +1,66 @@
 <div *ngIf="data.company_name === 'RDE Systems'">
-    <h2 mat-dialog-title>Computer Science Capstone @RDE Systems</h2>
-    <p mat-caption>FEB 2018-MAY 2018</p>
-    <mat-dialog-content class="mat-typography">
-        <p>RDE Systems is a technology consultancy company that serves the public health sector. 
-            As part of a small team, I designed and developed a messaging system using Angular to 
-            facilitate communication between AIDS patients and their caseworkers. I also created a 
-            Coldfusion API and integrated this messaging system into a larger webapp which ensured 
-            patients living with AIDS and HIV have access to medication.</p>
-    
-        <h3 class="mat-h3">Task</h3>
-        <ul>
-            <li>Within 3 months, create a secure two-way messaging system</li>
-            <li>Be able to send, receive and view mail</li>
-            <li>Easily search users</li>
-            <li>Create different roles for case workers and patients which have different abilities</li>
-        </ul>
-    
-        <h3 class="mat-h3">Design Process</h3>
-    </mat-dialog-content>
+  <h2 mat-dialog-title>Computer Science Capstone @RDE Systems</h2>
+  <p mat-caption>FEB 2018-MAY 2018</p>
+  <mat-dialog-content class="mat-typography">
+    <img src="../../assets/images/rde_messaging.png" />
+    <mat-divider></mat-divider>
+    <h3 class="mat-h3 headline">About</h3>
+    <p>
+      RDE Systems is a technology consultancy company that serves the public
+      health sector. As part of a small team, I designed and developed a
+      messaging system using Angular to facilitate communication between AIDS
+      patients and their caseworkers. I also created a Coldfusion API and
+      integrated this messaging system into a larger webapp which ensured
+      patients living with AIDS and HIV have access to medication.
+    </p>
+
+    <h3 class="mat-h3 headline">Task</h3>
+    <ul>
+      <li>Within 3 months, create a secure two-way messaging system</li>
+      <li>Be able to send, receive and view mail</li>
+      <li>Easily search users</li>
+      <li>
+        Create different roles for case workers and patients which have
+        different abilities
+      </li>
+    </ul>
+
+    <h3 class="mat-h3 headline">Design Process</h3>
+  </mat-dialog-content>
 </div>
 
 <div *ngIf="data.company_name === 'Trillium'">
-    <h2 mat-dialog-title>Software Engineering Intern @Trillium</h2>
-    <p mat-caption>JUN 2016-APR 2017</p>
-    <mat-dialog-content class="mat-typography">
-        <p>Trillium is a high stakes trading company located in New York City. At Trillium LABS, 
-            I collaborated with a team web app to display trading data in graphical and intuitive manner using WebGL, 
-            HTML5 canvas, and JS. I added new features based on customer feedback such as resizable windows, 
-            graphical functions, zoom, and stock search which simplified user interactions and provided 
-            better market picture. Furthermore, I responded to ticket issues, developed bug fixes, 
-            & pushed changes using JIRA and TortoiseSVN.</p>
-    </mat-dialog-content>    
+  <h2 mat-dialog-title>Software Engineering Intern @Trillium</h2>
+  <p mat-caption>JUN 2016-APR 2017</p>
+  <mat-dialog-content class="mat-typography">
+    <p>
+      Trillium is a high stakes trading company located in New York City. At
+      Trillium LABS, I collaborated with a team web app to display trading data
+      in graphical and intuitive manner using WebGL, HTML5 canvas, and JS. I
+      added new features based on customer feedback such as resizable windows,
+      graphical functions, zoom, and stock search which simplified user
+      interactions and provided better market picture. Furthermore, I responded
+      to ticket issues, developed bug fixes, & pushed changes using JIRA and
+      TortoiseSVN.
+    </p>
+  </mat-dialog-content>
 </div>
 
 <div *ngIf="data.company_name === 'Forbes'">
-    <h2 mat-dialog-title>Technology Intern @Forbes</h2>
-    <p mat-caption>JUN 2015-AUG 2016</p>
-    <mat-dialog-content class="mat-typography">
-        <p>At Forbes Media, I worked on the Forbes website and aided the team focused on advertisements. 
-            I analyzed Adblock development trends and contributed to creation of “adblock blocker” which increased company revenue. 
-            I gained experience with Google Tag Manager V2 & Google Analytics, SpringMVC, and website template design. 
-            I also obtained experience with Git & Code Review via Phabricator/Arcanist.
-            </p>
-    </mat-dialog-content>    
+  <h2 mat-dialog-title>Technology Intern @Forbes</h2>
+  <p mat-caption>JUN 2015-AUG 2016</p>
+  <mat-dialog-content class="mat-typography">
+    <p>
+      At Forbes Media, I worked on the Forbes website and aided the team focused
+      on advertisements. I analyzed Adblock development trends and contributed
+      to creation of “adblock blocker” which increased company revenue. I gained
+      experience with Google Tag Manager V2 & Google Analytics, SpringMVC, and
+      website template design. I also obtained experience with Git & Code Review
+      via Phabricator/Arcanist.
+    </p>
+  </mat-dialog-content>
 </div>
 
 <mat-dialog-actions>
-    <button mat-raised-button mat-dialog-close>Close</button>
+  <button mat-raised-button mat-dialog-close>Close</button>
 </mat-dialog-actions>
