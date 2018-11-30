@@ -1,0 +1,18 @@
+@import "../../website-colors.scss";
+
+.contact-bg {
+  background-color: $mdc-theme-black;
+  text-align: center;
+  color: $mdc-theme-background;
+
+  .headline {
+    color: $mdc-theme-primary;
+  }
+  .mat-display-1 {
+    margin: 0;
+  }
+
+  .mat-icon-button i {
+    font-size: 2em;
+  }
+}
