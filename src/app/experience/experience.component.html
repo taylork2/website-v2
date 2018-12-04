@@ -48,11 +48,7 @@
             <ul class="desc-li" *ngFor="let bullet of exp.desc">
               <li>{{ bullet }}</li>
             </ul>
-            <button
-              mat-raised-button
-              color="primary"
-              (click)="openDialog(exp.company)"
-            >
+            <button mat-raised-button (click)="openDialog(exp.company)">
               Read more
             </button>
           </div>
