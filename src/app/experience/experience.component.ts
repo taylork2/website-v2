@@ -23,7 +23,7 @@ export class ExperienceComponent implements OnInit {
         "Designed and developed messaging system using Angular which encouraged AIDS patients to communicate with case workers.",
         "Created Coldfusion API and integrated messaging system into larger webapp for government AIDS Drug Assistance."
       ],
-      color: "#9efffa"
+      color: "#0d1b1e"
     },
     {
       company: "Trillium",
@@ -73,7 +73,8 @@ export class ExperienceComponent implements OnInit {
 
 @Component({
   selector: "experience-dialog",
-  templateUrl: "./experience-dialog.component.html"
+  templateUrl: "./experience-dialog.component.html",
+  styleUrls: ["./experience-dialog.component.scss"]
 })
 export class ExperienceDialogComponent {
   constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {}
