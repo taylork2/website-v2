@@ -14,6 +14,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+To deploy to NJIT server `ng build --prod --deploy-url /~tkt7/profile/ --base-href "https://web.njit.edu/~tkt7/profile/"`
+
+To deploy to github pages `ng build --prod --base-href "/website-v2/"` then do `npx ngh --dir=dist/website-v2`
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
